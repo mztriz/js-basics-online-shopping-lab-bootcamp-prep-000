@@ -26,20 +26,20 @@ function viewCart() {
   if (getCart().length === 0){
     return "Your shopping cart is empty."
   } 
-  var sentance = "In your cart, you have"
+  var sentence = "In your cart, you have"
   if (getCart().length === 1){
-    return `${sentance} ${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`
+    return `${sentence} ${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`
   }
-  var middleSentances = ''
+  var middleSentences = ''
   if (getCart().length >= 2){
     for (let i = 0; i < getCart().length; i++){
       if (i === getCart().length - 1){
-        middleSentances = `${middleSentances}and ${getCart()[i].itemName} at $${getCart()[i].itemPrice}.`
+        middleSentences = `${middleSentances}and ${getCart()[i].itemName} at $${getCart()[i].itemPrice}.`
       }else{
-        middleSentances +=`${getCart()[i].itemName} at $${getCart()[i].itemPrice}, `
+        middleSentences +=`${getCart()[i].itemName} at $${getCart()[i].itemPrice}, `
       }
     }
-    return `${sentance} ${middleSentances}`
+    return `${sentence} ${middleSentances}`
   }
 }
 

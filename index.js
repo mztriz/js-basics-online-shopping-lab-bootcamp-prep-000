@@ -34,7 +34,7 @@ function viewCart() {
   if (getCart().length >= 2){
     for (let i = 0; i < getCart().length; i++){
       if (i === getCart().length - 1){
-        middleSentences = `${middleSentances}and ${getCart()[i].itemName} at $${getCart()[i].itemPrice}.`
+        middleSentences = `${middleSentences}and ${getCart()[i].itemName} at $${getCart()[i].itemPrice}.`
       }else{
         middleSentences +=`${getCart()[i].itemName} at $${getCart()[i].itemPrice}, `
       }

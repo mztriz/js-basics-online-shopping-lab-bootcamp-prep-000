@@ -55,9 +55,8 @@ function removeFromCart(item) {
   if (getCart().indexOf(item) === -1){
     return "That item is not in your cart."
   }
-  let cart = setCart(getCart().splice(getCart().indexOf(item), 1))
-  console.log(cart)
-  return cart
+  setCart(getCart().splice(getCart().indexOf(item), 1))
+  return getCart()
 }
 
 function placeOrder(cardNumber) {

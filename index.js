@@ -51,13 +51,17 @@ function total(){
   return total
 }
 
-function removeFromCart(item) {
+/*function removeFromCart(item) {
   console.log(getCart().indexOf(item))
   if (getCart().indexOf(item) === -1){
     return "That item is not in your cart."
   }
   setCart(getCart().splice(getCart().indexOf(item), 1))
   return getCart()
+}*/
+
+function removeFromCart(item){
+  for (let i = 0; i < getCart().length; i++)
 }
 
 function placeOrder(cardNumber) {

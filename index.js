@@ -66,8 +66,8 @@ function removeFromCart(item){
       getCart().splice(i, 1)
       return getCart()
     }
-    return "That item is not in y our cart."
   }
+   return "That item is not in y our cart."
 }
 
 function placeOrder(cardNumber) {

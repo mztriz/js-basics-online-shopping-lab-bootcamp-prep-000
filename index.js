@@ -39,7 +39,7 @@ function viewCart() {
         middleSentences +=`${getCart()[i].itemName} at $${getCart()[i].itemPrice}, `
       }
     }
-    return `${sentence} ${middleSentances}`
+    return `${sentence} ${middleSentences}`
   }
 }
 

@@ -55,7 +55,7 @@ function removeFromCart(item) {
   if (getCart().indexOf(item) === -1){
     return "That item is not in your cart."
   }
-  setCart(getCart().splice(getCart().indexOf(item), 1)
+  setCart(getCart().splice(getCart().indexOf(item), 1))
   return getCart()  
 }
 

@@ -70,3 +70,5 @@ function placeOrder(cardNumber) {
 }
 
 
+addToCart('apples')
+removeFromCart('apples')
